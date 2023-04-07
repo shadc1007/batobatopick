@@ -63,5 +63,12 @@ const playGame = (playerMove) => {
   }
   
   alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-  Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.ties}`)
+Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.ties}`)
+}
+
+
+const resetScore = (zero) => {
+  score.wins = zero
+  score.loses = zero
+  score.ties = zero
 }
