@@ -1,5 +1,16 @@
+// when button clicked 
+ //computer picks a move
+ // compare player move and computer move
+ // update the score
+ // display the result
 
 
+
+const score = {
+  wins: 0,
+  loses: 0,
+  ties: 0
+}   
 
 
 const pickComputerMove = () => {  
@@ -43,5 +54,14 @@ const playGame = (playerMove) => {
     }
   }
 
-  alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}`)
+  if (result === 'You win.') {
+    score.wins += 1
+  } else if (result === 'You lose.') {
+    score.loses += 1
+  } else {
+    score.ties += 1
+  }
+  
+  alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
+  Wins: ${score.wins} Loses: ${score.loses} Ties: ${score.ties}`)
 }
