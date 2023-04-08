@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 1</title>
-  </head>
-  <body>
-    <div id="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     <h1>Rock Paper Scissors</h1>
+    <p id="result"></p>
+    <p id="pick"></p>
+    <p id="score"></p>
     <button onclick="playGame('Rock')">Rock</button>
     <button onclick="playGame('Paper')">Paper</button>
     <button onclick="playGame('Scissors')">Scissors</button>
-    <button onclick="resetScore(0)">Reset Score</button>
-    </div>
-    <script src="/main.js"></script>
-  </body>
+    <button onclick="reset()">reset</button>
+
+    <script src="app.js"></script>
+</body>
 </html>
